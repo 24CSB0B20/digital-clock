@@ -1,0 +1,109 @@
+/* Reset and layout */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Arial', sans-serif;
+    background-color: #fff;
+    transition: background-color 0.5s ease;
+  }
+  
+  .container {
+    text-align: center;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .clock {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  
+  .date {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  button {
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  /* Themes */
+  body.light {
+    background-color: #fff;
+    color: #000;
+  }
+  
+  body.dark {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  body.neon {
+    background-color: #000;
+    color: #39ff14;
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 0 0 10px #39ff14;
+  }
+  
+  body.custom {
+    background-color: #fafafa;
+    color: #111;
+  }
+  
+  .alarm {
+    margin-top: 20px;
+  }
+  
+  .stopwatch, .countdown {
+    margin-top: 20px;
+  }
+  
+  #stopwatchDisplay {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  #countdownDisplay {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  /* Animations */
+  @keyframes glowing {
+    0% { text-shadow: 0 0 5px #39ff14, 0 0 10px #39ff14, 0 0 15px #39ff14; }
+    50% { text-shadow: 0 0 20px #39ff14, 0 0 30px #39ff14, 0 0 40px #39ff14; }
+    100% { text-shadow: 0 0 5px #39ff14, 0 0 10px #39ff14, 0 0 15px #39ff14; }
+  }
+  
+  .glow {
+    animation: glowing 1.5s infinite;
+  }
+  
+  .blinkingColon {
+    animation: blink 1s infinite;
+  }
+  
+  @keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  

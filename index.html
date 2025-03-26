@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Clock with Alarm and Themes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Clock Display -->
+    <div class="clock" id="clock"></div>
+    <div class="date" id="date"></div>
+
+    <!-- Alarm Section -->
+    <div class="alarm">
+      <input type="text" id="alarmTime" placeholder="Set alarm (HH:MM AM/PM)">
+      <button id="setAlarmBtn">Set Alarm</button>
+      <button id="toggleAlarmBtn">Disable Alarm</button>
+      <div id="alarmStatus"></div>
+    </div>
+
+    <!-- Theme Switcher -->
+    <div class="themes">
+      <button id="lightTheme">Light Theme</button>
+      <button id="darkTheme">Dark Theme</button>
+      <button id="neonTheme">Neon Theme</button>
+    </div>
+
+    <!-- Stopwatch Section -->
+    <div class="stopwatch">
+      <div id="stopwatchDisplay">00:00:00</div>
+      <button id="startStopwatch">Start</button>
+      <button id="pauseStopwatch">Pause</button>
+      <button id="resetStopwatch">Reset</button>
+    </div>
+
+    <!-- Countdown Timer -->
+    <div class="countdown">
+      <input type="number" id="minutes" placeholder="Minutes">
+      <input type="number" id="seconds" placeholder="Seconds">
+      <button id="startCountdown">Start Countdown</button>
+      <div id="countdownDisplay">00:00</div>
+      <div id="countdownProgress"></div>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
